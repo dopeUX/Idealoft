@@ -1,0 +1,137 @@
+$primary-col:#3D0075;
+$bg-col:#2B2044;
+$secondary-col:#4B33E3;
+
+
+.hero-container{
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 0;
+    height: fit-content;
+
+    .hero-intro-section{
+      text-align: center;
+      width: fit-content;
+      margin: auto;  
+      display: block;
+      h1{
+        width: fit-content;
+        margin: auto;
+      }
+
+      p{
+        width: 250px;
+        margin: 1rem auto;
+        font-weight: 300;
+        // color:#C5C5C5;
+      }
+   }
+
+   .hero-image{
+    width: 70%;
+    height: 70%;
+    margin: 4rem auto 2rem auto;
+   }
+
+   .hero-btn{
+    font-family:'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
+    display: block;
+    margin: auto;
+    outline: none;
+    padding: 1rem 2.7rem;
+    background-color: $secondary-col;
+    border: 2px solid #ffffff;
+    border-style: dashed;
+    color: #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+   }
+}
+
+.desc-section{
+    width: 100%;
+    margin-top: 4rem;
+    background-color:#FFF5F5;
+    color:#313131;
+    height: fit-content;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    display: table;
+    flex-direction: column;
+
+   .desc-item{
+     margin: .8rem 2rem;
+     display: inline-block;
+    .desc-item-image{
+       width: 100px; 
+       margin-top: 1rem;
+    }
+    p{
+        width: 300px;
+        // margin:1rem 5rem;
+    }
+   }
+}
+
+@media only screen and(min-width:855px){
+   .hero-container{
+     width: 100%;
+     position: relative;
+
+    .hero-top-section{
+        position: relative;
+        display: flex;
+    .hero-intro-section{
+        text-align: left;
+        display: block;
+        align-items: flex-start;
+        margin:2rem auto auto 5rem;
+        h1{
+            display: inline;
+            width: fit-content;
+            font-size: 3rem;
+        }
+        p{
+            width: 250px;
+            margin: 0;
+            margin-top: 2rem;
+        }
+    }
+    .hero-image{
+        width: 500px;
+        float: right;
+        margin-top: 6rem;
+    }
+    button{
+     position: absolute;
+     bottom: 8rem;
+     left: 5rem;
+    }
+   } 
+  }
+}
+
+@media only screen and (min-width:1092px){
+    .hero-container{
+        margin-bottom:0;
+    }
+    .hero-btn{
+        position: absolute;
+        bottom: 15rem;
+    }
+    .desc-section{
+    justify-content: space-between;    
+    float: right;
+    width: 98%;
+    // padding-left: 5rem;
+    // padding-right: 5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+     
+    .desc-item{
+        margin: auto 2rem;
+    }
+    
+    }
+}

@@ -1,0 +1,132 @@
+header{
+   width: 100%;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   height: fit-content; 
+   background-color: transparent;
+   padding: 1.8rem 1.5rem;
+   box-sizing: border-box;
+
+   .logo-section{
+    width: 0%;
+    display: flex;
+    align-items: center;
+    margin-left: 0rem;
+   .logo{
+     width: 50px;
+     height: 50px;
+   }
+
+   h3{
+    margin: 0 0 0 2rem;
+   }
+  }
+
+  .navbar{
+    display: none;
+    background-color: transparent;
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        position: relative;
+       
+        li{
+            display: block;
+            text-decoration: none;
+            list-style: none;
+            margin-right: 3rem;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: 500;
+
+            small{
+                // font-size: 1rem;
+            }
+            .nav-indicator{
+                width: 40%;
+                // background-color: #ffffff;
+                height: 2px;
+                border-radius: 10px;
+                margin: auto;
+                
+                margin-top: 5px;
+            }
+           
+        }
+        // .ind{
+        //       position: absolute;
+        //       // width: 50;
+        //       height: 2px;
+        //       background-color: #ffffff;
+        //       border-radius: 10px;
+        //     }
+    }
+
+    .toggle-theme-icon{
+        width: 40px;
+        height: 40px;
+        margin-top: -2px;
+        cursor: pointer;
+    }
+    
+  }
+  
+  .navbar-mobile{
+     position: fixed;
+     background-color: black;
+     padding: 3rem 2.5rem;
+     right: -80%;
+     top: 0;
+     bottom: 0;
+     z-index: 99;
+     display: block;
+     height: 100vh;
+     transition:all .5s ease;
+
+     ul{
+        list-style: none;
+        margin: 1rem 2rem auto 1rem;
+        li{
+            margin: 2rem 1rem;
+            cursor: pointer;
+            color: white;
+        }
+     }
+
+     .close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+     }
+
+  }
+  .menu{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+
+}
+
+
+@media only screen and (min-width:780px){
+ header{   
+  .navbar{
+    display: flex;
+  }  
+  .menu{
+    display: none;
+  }
+  .navbar-mobile{
+    display: none;
+
+  }
+ }
+}

@@ -1,0 +1,136 @@
+header {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: transparent;
+  padding: 1.8rem 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .logo-section {
+  width: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0rem;
+}
+
+header .logo-section .logo {
+  width: 50px;
+  height: 50px;
+}
+
+header .logo-section h3 {
+  margin: 0 0 0 2rem;
+}
+
+header .navbar {
+  display: none;
+  background-color: transparent;
+}
+
+header .navbar ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+header .navbar ul li {
+  display: block;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+header .navbar ul li .nav-indicator {
+  width: 40%;
+  height: 2px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+header .navbar .toggle-theme-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+header .navbar-mobile {
+  position: fixed;
+  background-color: black;
+  padding: 3rem 2.5rem;
+  right: -80%;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  display: block;
+  height: 100vh;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+header .navbar-mobile ul {
+  list-style: none;
+  margin: 1rem 2rem auto 1rem;
+}
+
+header .navbar-mobile ul li {
+  margin: 2rem 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+header .navbar-mobile .close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+header .menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 780px) {
+  header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .menu {
+    display: none;
+  }
+  header .navbar-mobile {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Header.modules.css.map */

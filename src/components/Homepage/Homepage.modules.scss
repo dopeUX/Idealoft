@@ -1,0 +1,44 @@
+$primary-col:#3D0075;
+$bg-col:#2B2044;
+$secondary-col:#4B33E3;
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10rem;
+    text-align: center;
+    .large-vr-image{
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .gaming-image{
+        width:80%;
+        margin: 2rem auto;
+        border-radius: 2rem;
+    }
+
+    .explore-btn{
+        margin:3rem auto;
+        padding: 1rem 5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: $secondary-col; 
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        border-style: dashed;
+        border-radius: .5rem;
+    } 
+}
+
+@media only screen and (min-width:780px){
+
+    .homepage{
+    .large-vr-image{
+        width: 80%;
+    }
+    .gaming-image{
+        width: 70%;
+    }
+ }
+}

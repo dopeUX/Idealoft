@@ -1,0 +1,39 @@
+.product-section{
+  margin-top: 1rem;
+
+  .product-section-head{
+    width: fit-content;
+    margin: 3rem 2rem auto 3rem;
+  h2{
+    width: fit-content;
+    margin: 0;
+  } 
+  .head-indicator{
+    height: 2px;
+    width: 100%;
+    border-radius: 10px;
+    // background-color: #ffffff;
+  }
+  
+ }
+
+ .product-item-section{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    overflow-x: scroll;
+    margin-bottom: 2rem;
+ }
+}
+
+@media only screen and (min-width:1092px){
+    .product-section{
+        margin-top: 0rem;
+        padding-top: 0%;
+        .product-section-head{
+            h2{
+                margin-top: 5rem;
+            }
+        }
+    }
+}

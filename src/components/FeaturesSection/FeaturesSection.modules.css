@@ -1,0 +1,55 @@
+.features-section {
+  display: block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.features-section .features-section-buttons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 8px 5px rgba(73, 73, 73, 0.467);
+          box-shadow: 0 0 8px 5px rgba(73, 73, 73, 0.467);
+  padding: 2rem .5rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.features-section .features-section-buttons button {
+  font-weight: 500;
+  padding: 1rem 1.5rem;
+  margin: .5rem 1rem;
+  font-size: .7rem;
+  border: 4px solid #7C91FF;
+  border-radius: .5rem;
+  -webkit-box-shadow: 5px 5px #4A008F;
+          box-shadow: 5px 5px #4A008F;
+}
+
+.features-section .features-section-buttons .gaming {
+  border: 4px solid #FF00F5;
+  color: #ffffff;
+  background-color: #3D0075;
+}
+
+@media only screen and (min-width: 780px) {
+  .features-section .features-section-buttons {
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+  }
+  .features-section .features-section-buttons button {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+  }
+}
+/*# sourceMappingURL=FeaturesSection.modules.css.map */
