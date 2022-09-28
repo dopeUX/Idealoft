@@ -52,6 +52,7 @@
 
 .desc-section {
   width: 100%;
+  overflow-x: none;
   margin-top: 4rem;
   background-color: #FFF5F5;
   color: #313131;
@@ -68,7 +69,7 @@
 }
 
 .desc-section .desc-item {
-  margin: .8rem 2rem;
+  margin: .8rem 1rem;
   display: inline-block;
 }
 
@@ -78,7 +79,9 @@
 }
 
 .desc-section .desc-item p {
-  width: 300px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media only screen and (min-width: 855px) {
@@ -122,6 +125,12 @@
     bottom: 8rem;
     left: 5rem;
   }
+  .desc-section {
+    text-align: center;
+  }
+  .desc-section .desc-item p {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1092px) {
@@ -133,16 +142,24 @@
     bottom: 15rem;
   }
   .desc-section {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 98%;
+    text-align: left;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
   }
   .desc-section .desc-item {
-    margin: auto 2rem;
+    margin: auto 0rem;
   }
 }
 /*# sourceMappingURL=Hero.modules.css.map */

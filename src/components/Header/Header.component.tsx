@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({
           src={`assets/close-white.svg`}
           alt=""
           onClick={() => {
-            drawerRef.current.style.right = "-80%";
+            drawerRef.current.style.right = "-95%";
           }}
         />
       </nav>

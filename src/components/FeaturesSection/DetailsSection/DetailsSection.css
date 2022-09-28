@@ -47,6 +47,7 @@
 
 @media only screen and (min-width: 1200px) {
   .details-section {
+    display: block;
     text-align: center;
   }
   .details-section h2 {
@@ -54,14 +55,18 @@
     margin: 2rem auto;
   }
   .details-section .detail-items-section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     margin: 2rem auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     overflow-x: hidden;
   }
   .details-section .detail-items-section .details-image-card {
-    margin: 1rem 2rem;
+    margin: 1rem 0;
   }
 }
 /*# sourceMappingURL=DetailsSection.css.map */
