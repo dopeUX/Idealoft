@@ -36,7 +36,17 @@
   margin: 4rem auto 2rem auto;
 }
 
-.hero-container .hero-btn {
+.hero-container .know-more-btn-section {
+  display: block;
+  margin-top: -3.5rem;
+}
+
+.hero-container .know-more-btn-section img {
+  width: 3rem;
+  margin: 2rem auto;
+}
+
+.hero-container .know-more-btn-section .hero-btn {
   font-family: 'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
   display: block;
   margin: auto;
@@ -48,6 +58,10 @@
   color: #ffffff;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.hero-container .know-more-btn-section .arrow-desktop {
+  display: none;
 }
 
 .desc-section {
@@ -120,10 +134,31 @@
     float: right;
     margin-top: 6rem;
   }
-  .hero-container .hero-top-section button {
+  .hero-container .hero-top-section .know-more-btn-section {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: absolute;
-    bottom: 8rem;
+    top: 20rem;
     left: 5rem;
+  }
+  .hero-container .hero-top-section .know-more-btn-section .arrow-mobile {
+    display: none;
+  }
+  .hero-container .hero-top-section .know-more-btn-section .arrow-desktop {
+    width: 6rem;
+    display: block;
+    margin: auto 2rem;
   }
   .desc-section {
     text-align: center;
@@ -136,10 +171,6 @@
 @media only screen and (min-width: 1092px) {
   .hero-container {
     margin-bottom: 0;
-  }
-  .hero-btn {
-    position: absolute;
-    bottom: 15rem;
   }
   .desc-section {
     -webkit-box-pack: space-evenly;

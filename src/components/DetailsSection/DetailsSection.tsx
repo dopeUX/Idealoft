@@ -2,6 +2,7 @@ import React from "react";
 import detailItems from "./detailItems";
 import DetailsItemCard from "./DetailsItemCard";
 import "./DetailsSection.css";
+
 const DetailsSection: React.FC<any> = () => {
   const desc =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquet turpis sit amet lacinia feugiat. Cras a sapien a augue tempor sollicitudin sed ac nibh.";

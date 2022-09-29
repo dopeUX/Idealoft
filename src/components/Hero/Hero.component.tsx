@@ -16,7 +16,15 @@ const HeroContainer: React.FC<any> = () => {
 
         <img className="hero-image" src="assets/hero-image.svg" alt="" />
 
-        <button className="hero-btn">Know more</button>
+        <div className="know-more-btn-section">
+          <img className="arrow-mobile" src="assets/arrow-mobile.svg" alt="" />
+          <button className="hero-btn">Know more</button>
+          <img
+            className="arrow-desktop"
+            src="assets/arrow-desktop.svg"
+            alt=""
+          />
+        </div>
       </section>
       <section className="desc-section">
         {Array(3)

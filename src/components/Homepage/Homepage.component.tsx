@@ -4,7 +4,7 @@ import ProductsSection from "../ProductsSection/ProductsSection.component";
 import "../../GlobalStyles/globalStyles.css";
 import "./Homepage.modules.css";
 import FeaturesSection from "../FeaturesSection/FeaturesSection";
-import DetailsSection from "../FeaturesSection/DetailsSection/DetailsSection";
+import DetailsSection from "../DetailsSection/DetailsSection";
 import Footer from "../Footer/Footer.component";
 
 const HomePage: React.FC<any> = () => {

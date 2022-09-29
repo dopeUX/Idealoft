@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({
   navbarItems = ["Home", "About us", "Products", "Contacts"],
 }) => {
   const { state, dispatch }: any = useContext(Context);
-  const [activeIndex, setActiveIndex] = useState<number>(2);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
   const drawerRef: any = useRef();
   const refs: any = useRef([]);
 

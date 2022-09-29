@@ -33,20 +33,33 @@ $secondary-col:#4B33E3;
     height: 70%;
     margin: 4rem auto 2rem auto;
    }
-
-   .hero-btn{
-    font-family:'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
+    
+   .know-more-btn-section{
     display: block;
-    margin: auto;
-    outline: none;
-    padding: 1rem 2.7rem;
-    background-color: $secondary-col;
-    border: 2px solid #ffffff;
-    border-style: dashed;
-    color: #ffffff;
-    border-radius: 12px;
-    cursor: pointer;
+    margin-top: -3.5rem;
+    img{
+        width: 3rem;
+        margin: 2rem auto;
+    }
+    .hero-btn{
+        font-family:'Manrope', 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
+        display: block;
+        margin: auto;
+        outline: none;
+        padding: 1rem 2.7rem;
+        background-color: $secondary-col;
+        border: 2px solid #ffffff;
+        border-style: dashed;
+        color: #ffffff;
+        border-radius: 12px;
+        cursor: pointer;
+       }
+       .arrow-desktop{
+        display: none;
+       }
+
    }
+  
 }
 
 .desc-section{
@@ -105,11 +118,30 @@ $secondary-col:#4B33E3;
         float: right;
         margin-top: 6rem;
     }
-    button{
-     position: absolute;
-     bottom: 8rem;
-     left: 5rem;
-    }
+    .know-more-btn-section{
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+        .arrow-mobile{
+            display: none;
+        }
+      button{ ///know more btn
+        //  bottom: 8rem;
+        //  left: 5rem;
+        //  margin-top: 1rem; 
+
+        }
+        .arrow-desktop{
+            width: 6rem;
+            display:block;
+            margin: auto 2rem;
+        }
+     }
+    
    } 
   }
 
@@ -127,10 +159,10 @@ $secondary-col:#4B33E3;
     .hero-container{
         margin-bottom:0;
     }
-    .hero-btn{
-        position: absolute;
-        bottom: 15rem;
-    }
+    // .hero-btn{
+    //     position: absolute;
+    //     bottom: 15rem;
+    // }
     .desc-section{
     justify-content: space-evenly;    
     float: right;
